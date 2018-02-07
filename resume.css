@@ -2,6 +2,21 @@
 @import url('https://fonts.googleapis.com/css?family=Cuprum');
 @import url('https://fonts.googleapis.com/css?family=Exo+2');
 
+@font-face {
+    font-family: 'exo 2';
+    src: url('exo2.eot')
+}
+
+@font-face {
+    font-family: 'cuprum';
+    src: url('cuprum.eot')
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url('roboto.eot')
+}
+
 html {
     display: table;
     height: 100%;
