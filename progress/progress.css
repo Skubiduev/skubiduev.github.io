@@ -104,7 +104,9 @@
         width: 130px;
         height: 300px;
     }
-
+    .block{
+        text-align: center;
+    }
     .functions, .paragraphs {
         margin-top: 40px
     }
