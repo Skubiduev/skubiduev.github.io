@@ -101,7 +101,7 @@
 
 @media screen and (orientation: portrait) {
     .main {
-        width: 140px;
+        width: 150px;
         height: 300px;
     }
     .block{
