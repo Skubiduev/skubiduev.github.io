@@ -99,7 +99,7 @@
     }
 }
 
-@media all and (max-width: 320px) {
+@media screen and (orientation: portrait) {
     .main {
         width: 120px;
         height: 300px;
