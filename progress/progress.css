@@ -110,4 +110,7 @@
     .functions, .paragraphs {
         margin-top: 40px
     }
+    .paragraphs{
+        margin-right: 5px;
+    }
 }
