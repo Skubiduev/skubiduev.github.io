@@ -54,7 +54,7 @@ header, .question, .contacts {
 }
 
 .header-background {
-    background: url("images/bg.jpg") center/cover no-repeat;
+    background: url("images/bg.jpg") center/cover no-repeat fixed;
     position: relative;
     z-index: 0;
 }
@@ -168,19 +168,19 @@ input, textarea {
     white-space: normal;
 }
 
-.color-coral{
+.color-coral {
     color: coral;
 }
 
-.color-limegreen{
+.color-limegreen {
     color: limegreen;
 }
 
-.text-align-center{
+.text-align-center {
     text-align: center;
 }
 
-.display-none{
+.display-none {
     display: none;
 }
 

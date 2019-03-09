@@ -356,8 +356,8 @@ let elementsToAnimate = [
     nav = document.querySelector('nav'),
     navigationState = true,
     start = 0,
-    forms=document.querySelectorAll('form'),
-    xhr=new XMLHttpRequest();
+    forms = document.querySelectorAll('form'),
+    xhr = new XMLHttpRequest();
 
 navigationBlock.style.opacity = '0';
 setTimeout(() => {
@@ -482,22 +482,22 @@ navigationSquare.onclick = function () {
     start = new Date().getTime()
 };
 
-[].forEach.call(forms,form=>{
-    form.onsubmit=function(e){
+[].forEach.call(forms, form => {
+    form.onsubmit = function (e) {
         e.preventDefault();
 
-        let fieldsClassList=this.querySelector('.fields').classList,
-            errorClassList=this.querySelector('.color-coral').classList,
-            successClassList=this.querySelector('.color-limegreen').classList;
+        let fieldsClassList = this.querySelector('.fields').classList,
+            errorClassList = this.querySelector('.color-coral').classList,
+            successClassList = this.querySelector('.color-limegreen').classList;
 
-        if(!this.querySelector('[name="name"]').value||!this.querySelector('[name="email"]').value){
+        if (!this.querySelector('[name="name"]').value || !this.querySelector('[name="email"]').value) {
             fieldsClassList.remove('display-none');
             errorClassList.add('display-none');
             successClassList.add('display-none');
             return;
         }
 
-        if(this.classList.contains('contacts-form')&&!this.querySelector('[name="message"]').value){
+        if (this.classList.contains('contacts-form') && !this.querySelector('[name="message"]').value) {
             fieldsClassList.remove('display-none');
             errorClassList.add('display-none');
             successClassList.add('display-none');
@@ -604,27 +604,26 @@ function checkArrowState() {
 }
 
 function submitForm(form) {
-    let whichForm=document.querySelector('form')===form,
-        name=form.querySelector('[name="name"]').value,
-        email=form.querySelector('[name="email"]').value,
+    let whichForm = document.querySelector('form') === form,
+        name = form.querySelector('[name="name"]').value,
+        email = form.querySelector('[name="email"]').value,
         message,
-        fieldsClassList=form.querySelector('.fields').classList,
-        errorClassList=form.querySelector('.color-coral').classList,
-        successClassList=form.querySelector('.color-limegreen').classList;
+        fieldsClassList = form.querySelector('.fields').classList,
+        errorClassList = form.querySelector('.color-coral').classList,
+        successClassList = form.querySelector('.color-limegreen').classList;
 
-    xhr.open('post','faststart.php');
-    xhr.setRequestHeader('Content-type','application/x-www-form-urlencoded');
+    xhr.open('post', 'faststart.php');
+    xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
 
-    if(!whichForm){
-        message=form.querySelector('[name="message"]').value;
+    if (!whichForm) {
+        message = form.querySelector('[name="message"]').value;
         xhr.send(`name=${name}&email=${email}&message=${message}`);
-    }
-    else xhr.send(`name=${name}&email=${email}`);
+    } else xhr.send(`name=${name}&email=${email}`);
 
-    xhr.onreadystatechange=()=>{
-        if(xhr.readyState!==4)return;
+    xhr.onreadystatechange = () => {
+        if (xhr.readyState !== 4) return;
 
-        if(xhr.status!==200){
+        if (xhr.status !== 200) {
             fieldsClassList.add('display-none');
             successClassList.add('display-none');
             errorClassList.remove('display-none');
