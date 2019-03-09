@@ -1,71 +1,315 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" defer></script>
-    <script src="resume.js" defer></script>
-    <link rel="icon" href="bird.png">
-    <link rel="stylesheet" href="resume.css">
-    <title>Резюме</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&amp;subset=cyrillic" rel="stylesheet">
+    <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" rel="stylesheet">
+    <link href="font-awesome.css" rel="stylesheet">
+    <link href="fonts/icon-7-stroke/css/pe-icon-7-stroke.css" rel="stylesheet">
+    <link href="faststart.css" rel="stylesheet">
+    <script defer src="faststart.js"></script>
+    <title>FastStart</title>
 </head>
-<body>
-<div class="blue-div">Антон Лопатин</div>
-<br>
-<div class="blue-div">Верстальщик, Junior Frontend разработчик</div>
-<div id="main">
-    <div class="gray-div open-button">Личная информация</div>
-    <div class="connect">
-        <div class="brown-div"><sup><span>Город:</span></sup> Подольск</div>
-        <br>
-        <div class="brown-div"><sup><span>Расстояние до Москвы:</span></sup> 20 км</div>
-        <br>
-        <div class="brown-div"><sup><span>Возраст:</span></sup> 29 лет</div>
-        <br>
-        <div class="brown-div big-div"><sup><span>Образование:</span></sup> высшее, РосНОУ, финансово-экономический
-            факультет, менеджмент организаций, заочное отделение, 2012
+<body class="color-777" link="#3eb0f7">
+<div class="arrow"><i class="pe-7s-up-arrow pe-va transition"></i></div>
+<div class="preloader transition">
+    <div class="circles">
+        <div class="circle-square transition">
+            <div class="circle"></div>
         </div>
-        <br>
-        <div class="brown-div"><sup><span>Владение языками:</span></sup> Английский</div>
-        <br>
-        <div class="brown-div"><sup><span>Семейное положение:</span></sup> не женат, детей нет</div>
-        <br>
-        <div class="brown-div"><sup><span>Отношение к алкоголю:</span></sup> нейтральное</div>
-    </div>
-    <div class="gray-div open-button">Профессиональные навыки</div>
-    <div class="connect">
-        <div class="brown-div"><sup><span>Опыт работы:</span></sup> нет</div>
-        <br>
-        <div class="brown-div"><sup><span>Знание технологий:</span></sup> HTML, CSS, JavaScript</div>
-        <br>
-        <a href="https://geekbrains.ru/users/27927?tab=courses-and-certificates#courses-and-certificates"
-           target="_blank" class="brown-div button"><sup><span>Пройденные курсы:</span></sup> [ Перейти в профиль
-            GeekBrains ]</a></div>
-    <div class="gray-div open-button">Портфолио</div>
-    <div class="connect">
-        <a href="makety.rar" class="brown-div button" download="Макеты.rar"><sup><span>Макеты:</span></sup> [
-            Загрузить свёрстанные макеты ]</a></div>
-    <div class="gray-div open-button">Профессиональные качества</div>
-    <div class="connect">
-        <div class="brown-div big-div"><sup><span>Качества:</span></sup> ответственность, скурпулёзность, прислушивание
-            к мнению окружающих, желание развиваться
+        <div class="circle-square transition">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-square transition">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-square transition">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-square transition">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-square transition">
+            <div class="circle"></div>
         </div>
     </div>
-    <div class="gray-div open-button">Цели</div>
-    <div class="connect">
-        <div class="brown-div big-div"><sup><span>Цели:</span></sup> работа в команде, получение опыта, приобретение
-            навыков, повышение квалификации, профессиональный рост
-        </div>
-    </div>
-    <div class="gray-div open-button">Ожидаемая зарплата</div>
-    <div class="connect">
-        <div class="brown-div"><sup><span>Зарплата:</span></sup> 40 тысяч рублей</div>
-    </div>
-    <div class="gray-div open-button">Контактная информация</div>
-    <div class="connect">
-        <a href="tel:+79067837915" class="brown-div button"><sup><span>Телефон:</span></sup> [ Позвонить на '+7(906)783-79-15' ]</a>
-        <br>
-        <a href="mailto:skubiduev@rambler.ru" class="brown-div button"><sup><span>E-mail:</span></sup> [ Написать на
-            'skubiduev@rambler.ru' ]</a></div>
 </div>
+<header id="header">
+    <div class="header-background">
+        <div class="header-background-dark"></div>
+        <div class="description-feedback">
+            <div class="description">
+                <img alt="Faststart" class="logo1" src="images/logo1.png">
+                <h1>Разработка сайтов любой сложности</h1>
+                <p class="our-command">FastStart - команда опытных профессионалов по реализации задач любой сложности в
+                    области web-разработки и программирования. В кратчайшие сроки мы реализуем все ваши идеи и мысли и
+                    дадим мощный толчок вашему бизнесу!</p>
+                <div class="about-cost-buttons">
+                    <button class="about transition">О нас</button>
+                    <button class="cost transition blue">Стоимость</button>
+                </div>
+            </div>
+            <form action="#" class="feedback">
+                <h2 class="feedback-h2 color-777">СВЯЖИТЕСЬ СО МНОЙ</h2>
+                <input class="feedback-name" name="name" placeholder="Мое имя" type="text">
+                <input class="feedback-email" name="email" placeholder="Мой e-mail" type="email">
+                <input class="submit transition" type="submit" value="ОТПРАВИТЬ ЗАПРОС">
+                <p class="feedback-p color-coral display-none">ОШИБКА ОБРАЩЕНИЯ К БАЗЕ ДАННЫХ. УСТАНОВИТЕ "XAMPP", ЗАГРУЗИТЕ РЕПОЗИТОРИЙ В ПАПКУ "HTDOCS", ЗАПУСТИТЕ "XAMPP", В НЁМ ЗАПУСТИТЕ "APACHE" И "MYSQL", ЗАЙДИТЕ В "LOCALHOST/PHPMYADMIN", ИМПОРТИРУЙТЕ БАЗУ ДАННЫХ ИЗ РЕПОЗИТОРИЯ И ЗАПУСТИТЕ ЭТУ СТРАНИЦУ.</p>
+                <p class="feedback-p color-coral text-align-center display-none fields">ЗАПОЛНИТЕ ПОЛЯ.</p>
+                <p class="feedback-p color-limegreen display-none">ЗАПРОС ОТПРАВЛЕН.</p>
+                <p class="feedback-p">Нажимая кнопку "ОТПРАВИТЬ ЗАПРОС" Вы даете согласие на обработку личных данных в
+                    соотстветствии правилами политики конфиденциальности.</p>
+            </form>
+        </div>
+    </div>
+</header>
+<div class="navigation">
+    <div class="navigation-wrapper">
+        <img alt="Faststart" class="logo2" src="images/logo2.png">
+        <nav>
+            <a class="color-777" href="#header">О нас</a>
+            <a class="color-777" href="#ideas">Преимущества</a>
+            <a class="color-777" href="#question">Как заказать</a>
+            <a class="color-777" href="#price">Стоимость</a>
+            <a class="color-777" href="#comments">Отзывы</a>
+            <a class="color-777" href="#contacts">Контакты</a>
+        </nav>
+        <div class="navigation-square">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</div>
+<div class="mission">
+    <img alt="Миссия" class="mission-img" src="images/intro-image.jpg">
+    <div class="our-mission">
+        <h2 class="color-777">Наша главная задача - сделать ваш бизнес в интернете уникальным.</h2>
+        <p>Для нас нет сложных задач. Мы разрабатываем не просто интернет-ресурсы для бизнеса, а создаем уникальные
+            сайты и порталы, которые максимально удовлетворяют потребности любого, даже самого требовательного,
+            пользователя.</p>
+        <button class="transition blue">Подробнее</button>
+    </div>
+</div>
+<div class="ideas" id="ideas">
+    <div class="ideas-wrapper">
+        <div>
+            <h2 class="color-777">Превращаем самые невероятные идеи в реальность</h2>
+            <p>Если вы еще не знаете чего хотите, то мы придумаем все за вас!</p>
+        </div>
+        <div class="ideas-description">
+            <img alt="Идеи" class="ideas-img" src="images/feature-image.jpg">
+            <div class="ideas-flex">
+                <div class="ideas-item">
+                    <i class="pe-7s-notebook transition"></i>
+                    <div>
+                        <h3>Уникальный подход</h3>
+                        <p>Мы подходим к идеям разработки с самых необычных сторон, что позволяет удивлять будущих
+                            пользователей.</p>
+                    </div>
+                </div>
+                <div class="ideas-item">
+                    <i class="pe-7s-cash transition"></i>
+                    <div>
+                        <h3>Монетизация</h3>
+                        <p>Правильный дизайн быстро приводит потенциальных клиентов к покупке, поэтому наша команда
+                            уделяет этому самую важную роль.</p>
+                    </div>
+                </div>
+                <div class="ideas-item">
+                    <i class="pe-7s-cart transition"></i>
+                    <div>
+                        <h3>Повышение функционала</h3>
+                        <p>Разработанные нами проекты всегда готовы к дополнительным расширеням функционала. За счет
+                            гибкости разработки, мы в кратчайшие добавим новые модули и решения.</p>
+                    </div>
+                </div>
+                <div class="ideas-item">
+                    <i class="pe-7s-users transition"></i>
+                    <div>
+                        <h3>Оптимизация процессов</h3>
+                        <p>Весь оборот и отчетность по клиентам будут доступны в специальной системе userBox, которая
+                            разработана нашей командой для оптимизации процессов работы с клиентами.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mission">
+    <div class="our-mission">
+        <h2 class="color-777" data="site">Качественный сайт в разумные сроки</h2>
+        <p data="site">За счёт оптимизации внутренних процессов, многие работы по разработке сайта выполняются
+            параллельно. Это позволяет нам сократить время выкладки сайта, не увеличивая при этом итоговую цену.</p>
+        <p data="site">Стоимость разработки сайта считается исходя из необходимого функционала и трудозатрат. При
+            ограниченном бюджете есть возможность упростить некоторые этапы или изменить перечень функционала. Стоимость
+            создания проекта начинается от 15 000 руб.</p>
+        <button class="transition blue" data="site">Узнать стоимость</button>
+    </div>
+    <img alt="Сайт" class="mission-img site" src="images/feature2-image.jpg">
+</div>
+<div class="question" id="question">
+    <div class="header-background">
+        <div class="header-background-dark"></div>
+        <div class="question-content">
+            <h2 class="question-h2 color-777">Хотите узнать, как развить свой бизнес?</h2>
+            <p class="our-command question-p">Свяжитесь с нами и мы расскажем о том, что подойдет именно для вашего
+                бизнеса и какие инструменты мы будем использовать.</p>
+            <button class="submit question-button transition">Связаться с нами</button>
+        </div>
+    </div>
+</div>
+<div class="price" id="price">
+    <h2 class="main-h2">СТОИМОСТЬ</h2>
+    <hr class="main-hr">
+    <div class="price-items">
+        <div class="price-item">
+            <i class="pe-7s-radio pe-5x"></i>
+            <h3>Сайт-визитка</h3>
+            <div class="price-item-cost">
+                <span class="price-item-cost-span-1">от</span>
+                <span class="price-item-cost-span-2 blue">15</span>
+                <span class="price-item-cost-span-3">тыс. руб.</span>
+                <ul>
+                    <li>до <span class="strong">1</span> страниц</li>
+                    <li><span class="strong">Эксклюзивный</span> дизайн</li>
+                    <li><span class="strong">Адаптивня</span> верстка</li>
+                    <li><span class="strong">Внутренняя</span> оптимизация</li>
+                    <li class="strike">Платформа userBox</li>
+                </ul>
+                <button class="submit question-button price-button transition">ЗАКАЗАТЬ</button>
+            </div>
+        </div>
+        <div class="price-item">
+            <i class="pe-7s-joy pe-5x"></i>
+            <h3>Сайт компании</h3>
+            <div class="price-item-cost">
+                <span class="price-item-cost-span-1">от</span>
+                <span class="price-item-cost-span-2 blue">40</span>
+                <span class="price-item-cost-span-3">тыс. руб.</span>
+                <ul>
+                    <li>до <span class="strong">10</span> страниц</li>
+                    <li><span class="strong">Эксклюзивный</span> дизайн</li>
+                    <li><span class="strong">Адаптивня</span> верстка</li>
+                    <li><span class="strong">Внутренняя</span> оптимизация</li>
+                    <li class="strike">Платформа userBox</li>
+                </ul>
+                <button class="submit question-button price-button transition">ЗАКАЗАТЬ</button>
+            </div>
+        </div>
+        <div class="price-item">
+            <i class="pe-7s-science pe-5x"></i>
+            <h3>Магазин</h3>
+            <div class="price-item-cost">
+                <span class="price-item-cost-span-1">от</span>
+                <span class="price-item-cost-span-2 blue">220</span>
+                <span class="price-item-cost-span-3">тыс. руб.</span>
+                <ul>
+                    <li><span class="strong">Эксклюзивный</span> дизайн</li>
+                    <li><span class="strong">Адаптивня</span> верстка</li>
+                    <li><span class="strong">Внутренняя</span> оптимизация</li>
+                    <li><span class="strong">Маркетинг</span> решения</li>
+                    <li class="strike">Платформа userBox</li>
+                </ul>
+                <button class="submit question-button price-button transition">ЗАКАЗАТЬ</button>
+            </div>
+        </div>
+        <div class="price-item">
+            <i class="pe-7s-tools pe-5x"></i>
+            <h3>Интернет-портал</h3>
+            <div class="price-item-cost">
+                <span class="price-item-cost-span-1">от</span>
+                <span class="price-item-cost-span-2 blue">500</span>
+                <span class="price-item-cost-span-3">тыс. руб.</span>
+                <ul>
+                    <li><span class="strong">Эксклюзивный</span> дизайн</li>
+                    <li><span class="strong">Адаптивня</span> верстка</li>
+                    <li><span class="strong">Внутренняя</span> оптимизация</li>
+                    <li><span class="strong">Маркетинг</span> решения</li>
+                    <li class="strike">Платформа userBox</li>
+                </ul>
+                <button class="submit question-button price-button transition">ЗАКАЗАТЬ</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="clients-wrapper">
+    <div class="client">
+        <h2 class="main-h2">НАШИ КЛИЕНТЫ</h2>
+        <hr class="main-hr">
+        <div class="clients-pictures">
+            <img alt="Finnair" src="images/finnair.png">
+            <img alt="Event" src="images/event.png">
+            <img alt="Letidor" src="images/letidor.png">
+            <img alt="Viking" src="images/viking.png">
+        </div>
+    </div>
+</div>
+<div class="comments" id="comments">
+    <h2 class="main-h2">ОТЗЫВЫ</h2>
+    <hr class="main-hr">
+    <div class="comment">
+        <div class="comment-main">
+            <div class="photo baklanov"></div>
+            <p class="curse">"Выражаем благодарность компании за работу над улучшением нашего сайта finnair.com Я высоко
+                оцениваю качество выполненных работ по анализу потребностей пользователей и проектированию интерфейса
+                новой системы личных сообщений. Считаю необходимым отдельно упомянуть ответственность по отношению к
+                срокам выполнения поставленных задач и неукоснительное следование целям заказчика."</p>
+            <p class="comment-who">Илья Бакланов, <span class="curse blue font-size-16-px">Finnair</span></p>
+        </div>
+        <div class="slider transition">
+            <div class="slider-div slider-first-div"></div>
+            <div class="slider-div"></div>
+            <div class="slider-div"></div>
+        </div>
+    </div>
+</div>
+<div class="contacts" id="contacts">
+    <div class="header-background">
+        <div class="header-background-dark"></div>
+        <div class="contacts-content">
+            <div>
+                <h2><span class="blue">Свяжитесь</span> с нами</h2>
+                <ul>
+                    <li>
+                        <i class="pe-7s-map-marker blue"></i>
+                        <p class="contacts-first-p">Большая Спасская ул. 12</p>
+                        <p>Москва, Россия</p>
+                    </li>
+                    <li>
+                        <i class="pe-7s-phone blue"></i>
+                        <p>8(495)626-46-00</p>
+                    </li>
+                    <li>
+                        <i class="pe-7s-mail contacts-bottom-is blue"></i>
+                        <a class="blue" href="mailto:moscow@faststart.ru">moscow@faststart.ru</a>
+                    </li>
+                    <li>
+                        <i class="pe-7s-look contacts-bottom-is blue"></i>
+                        <a class="blue" href="http://www.faststart.ru">www.faststart.ru</a>
+                    </li>
+                </ul>
+            </div>
+            <form action="#" class="contacts-form">
+                <input placeholder="Ваше имя" type="text" name="name">
+                <input placeholder="Ваш Email" type="email" name="email">
+                <textarea placeholder="Я хочу..." name="message"></textarea>
+                <button class="submit transition">Отправить запрос</button>
+                <p class="feedback-p color-coral text-align-center display-none">ОШИБКА ОБРАЩЕНИЯ К БАЗЕ ДАННЫХ. УСТАНОВИТЕ "XAMPP", ЗАГРУЗИТЕ РЕПОЗИТОРИЙ В ПАПКУ "HTDOCS", ЗАПУСТИТЕ "XAMPP", В НЁМ ЗАПУСТИТЕ "APACHE" И "MYSQL", ЗАЙДИТЕ В "LOCALHOST/PHPMYADMIN", ИМПОРТИРУЙТЕ БАЗУ ДАННЫХ ИЗ РЕПОЗИТОРИЯ И ЗАПУСТИТЕ ЭТУ СТРАНИЦУ.</p>
+                <p class="feedback-p color-coral text-align-center display-none fields">ЗАПОЛНИТЕ ПОЛЯ.</p>
+                <p class="feedback-p color-limegreen text-align-center display-none">ЗАПРОС ОТПРАВЛЕН.</p>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="social">
+    <a class="blue transition" href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+    <a class="blue transition" href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+    <a class="blue transition" href="https://plus.google.com"><i class="fab fa-google-plus"></i></a>
+    <a class="blue transition" href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+</div>
+<div class="last-div"></div>
+<script> </script>
 </body>
 </html>
