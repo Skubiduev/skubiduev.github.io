@@ -491,16 +491,16 @@ navigationSquare.onclick = function () {
             successClassList = this.querySelector('.color-limegreen').classList;
 
         if (!this.querySelector('[name="name"]').value || !this.querySelector('[name="email"]').value) {
-            fieldsClassList.remove('display-none');
-            errorClassList.add('display-none');
-            successClassList.add('display-none');
+            fieldsClassList.remove('height-0');
+            errorClassList.add('height-0');
+            successClassList.add('height-0');
             return;
         }
 
         if (this.classList.contains('contacts-form') && !this.querySelector('[name="message"]').value) {
-            fieldsClassList.remove('display-none');
-            errorClassList.add('display-none');
-            successClassList.add('display-none');
+            fieldsClassList.remove('height-0');
+            errorClassList.add('height-0');
+            successClassList.add('height-0');
             return;
         }
 
@@ -624,14 +624,14 @@ function submitForm(form) {
         if (xhr.readyState !== 4) return;
 
         if (xhr.status !== 200) {
-            fieldsClassList.add('display-none');
-            successClassList.add('display-none');
-            errorClassList.remove('display-none');
+            fieldsClassList.add('height-0');
+            successClassList.add('height-0');
+            errorClassList.remove('height-0');
             return;
         }
 
-        fieldsClassList.add('display-none');
-        errorClassList.add('display-none');
-        successClassList.remove('display-none');
+        fieldsClassList.add('height-0');
+        errorClassList.add('height-0');
+        successClassList.remove('height-0');
     }
 }

@@ -181,8 +181,18 @@ input, textarea {
     text-align: center;
 }
 
-.display-none {
-    display: none;
+.overflow-height-margin {
+    overflow: hidden;
+    height: 37px;
+    margin-bottom: 0;
+}
+
+.height-170-px {
+    height: 170px;
+}
+
+.height-0 {
+    height: 0;
 }
 
 input::-webkit-input-placeholder {
