@@ -181,10 +181,12 @@ input, textarea {
     text-align: center;
 }
 
-.overflow-height-margin {
+.overflow-height-margin-width {
     overflow: hidden;
     height: 37px;
-    margin-bottom: 0;
+    margin: auto;
+    margin-bottom: 0 !important;
+    width: 396px;
 }
 
 .height-170-px {
